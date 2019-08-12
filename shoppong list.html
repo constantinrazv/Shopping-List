@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Shopping List</title>
+
+<style>
+body{
+				background-color:plum;
+			}
+.hidden{
+  display: none;
+}
+.btn{
+  border-radius:7px;
+	padding:5px;
+	margin:5px;
+  background-color:springgreen;
+}
+.btn-sort{
+  background-color:mediumorchid;
+  border-radius:7px;
+	padding:5px;
+	margin:5px;
+}
+#formular{
+  text-align:center;
+	background-color:white;
+	width:800px;
+	position:relative;
+	left:20%;
+	border-radius:5px;
+}
+#lista-cuparaturi{
+  position:relative;
+  width:100%;
+  border-collapse:collapse;
+  border-radius:25px;
+	padding-top:20px;
+	padding-bottom:20px;
+	margin:20px;
+}
+
+h1{
+  padding:20px 20px 10px 20px;
+}
+
+td,th {
+  padding:20px;
+}
+thead{
+  font-weight:600;
+}
+.mark{
+  background-color:tomato;
+}
+.strike{
+  text-decoration: line-through;
+}
+
+</style>
+
+</head>
+<body>
+  <form id="formular">
+
+    <h1>SHOPPING LIST</h1>
+  
+    <input type="text" class="add-item">
+  
+    <button class="btn" onclick="adauga(this,event);">Add item</button>
+
+    <input type="button" class="btn-sort" value="Sort Asc" onclick="sortAsc();" >
+
+    <input  type="button" class="btn-sort" value="Sort Desc" onclick="sortDesc();">
+
+    <table id="lista-cuparaturi" class="hidden">
+      <thead>
+        <tr>
+          <td>Item description</td>
+          <td>Action</td>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+  </form>
+  
+  <script src="index shopping list.js">
+  
+  </script>
+</body>
+</html>
